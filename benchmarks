@@ -1,0 +1,10 @@
+1. perftest
+
+
+------------------header-----------------------------------
+1. perftest
+  # server site
+  [root@localhost ~]# ib_write_bw -d mlx5_3 -R -p 2001 --report_gbits --tos=106 
+  # client site
+  ib_write_bw -d mlx5_0 -p 2001 -R -s 65536 --report_gbits 172.12.71.173 --tos=106 --run_infinitely
+  
